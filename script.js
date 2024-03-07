@@ -41,6 +41,11 @@ function SearchFunc(){
         })
         document.querySelector(".searchdata").style.display = "block"
         document.querySelector(".searchdata").innerHTML = clutter
+
+        input.addEventListener("blur", function(){
+            document.querySelector(".searchdata").style.display = "none"
+        })
+        
     })
 
    
